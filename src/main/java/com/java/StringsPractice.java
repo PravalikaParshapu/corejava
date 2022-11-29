@@ -82,4 +82,41 @@ public class StringsPractice {
        }
        System.out.println(result);
    }
-}
+
+   @Test
+    public void getLength(){
+        String s1 = "Hiii";
+        Integer s2 = s1.length();
+       System.out.println(s2);
+   }
+
+   @Test
+    public void task1(){
+       String s1 = "hello";
+       String s2 = "world";
+       Integer lengthOfString1 = s1.length();
+       Integer lengthOfString2 = s2.length();
+       Integer x = lengthOfString1+lengthOfString2;
+       System.out.println(x);
+       int b = s1.compareTo(s2);
+       if(b == 0){
+           System.out.println("equal");
+       }else if(b > 0){
+           System.out.println("yes");
+       }else if(b < 0){
+           System.out.println("no");
+       }
+
+
+       String firstLetterIns1 = s1.substring(0,1);
+       String upperCaseFors1 = firstLetterIns1.toUpperCase();
+       String remainLettersIns1 = s1.substring(1);
+       String out = upperCaseFors1+remainLettersIns1;
+       String firstLetterIns2 = s2.substring(0,1);
+       String upperCaseFors2 = firstLetterIns2.toUpperCase();
+       String remainLettersIns2 = s2.substring(1);
+       String out1 = upperCaseFors2+remainLettersIns2;
+       String result = out+ " "+ out1;
+       System.out.println(result);
+   }
+   }
