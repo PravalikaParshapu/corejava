@@ -106,8 +106,6 @@ public class StringsPractice {
        }else if(b < 0){
            System.out.println("no");
        }
-
-
        String firstLetterIns1 = s1.substring(0,1);
        String upperCaseFors1 = firstLetterIns1.toUpperCase();
        String remainLettersIns1 = s1.substring(1);
