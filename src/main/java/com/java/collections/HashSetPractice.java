@@ -2,7 +2,9 @@ package com.java.collections;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class HashSetPractice {
@@ -29,5 +31,14 @@ public class HashSetPractice {
         set.stream().forEach(str -> System.out.println(str));
         System.out.println(set);
     }
+    @Test
+    public void task2(){
+        Set<String> set = new HashSet<>();
+        set.add("Hiii");
+        set.add("Hi");
+        set.add("Hiiiiiii");
+        set.stream().forEach(str -> System.out.println(str));
+    }
+    
 
 }

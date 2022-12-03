@@ -19,7 +19,7 @@ public class ArrayListPractice {
 
     @Test
     public void add(){
-        List list1 = new ArrayList();
+        List<Object> list1 = new ArrayList();
         list1.add("Jack");
         list1.add(10);
         list1.add(1.23);
@@ -112,5 +112,12 @@ public class ArrayListPractice {
         collectingStrings.stream().forEach(str1 -> System.out.println(str1));
     }
 
-
+    @Test
+    public void task2(){
+        List<String> list = new ArrayList<>();
+        list.add("Hiii");
+        list.add("Hi");
+        list.add("Hiiiiiii");
+        list.stream().forEach(str -> System.out.println(str));
+    }
 }
